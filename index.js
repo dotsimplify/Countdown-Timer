@@ -21,9 +21,13 @@ function stop() {
     let cur_val = parseInt(document.getElementById('counter').innerHTML)
     clearInterval(x);
     document.getElementById("counter").innerHTML = cur_val
+    var btn = document.getElementById('button1');
+    btn.disabled = false;
 }
 
 function reset() {
     stop()
     document.getElementById('counter').innerHTML = "Timer Reset"
+    var btn = document.getElementById('button1');
+    btn.disabled = false;
 }
