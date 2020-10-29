@@ -20,7 +20,7 @@ function start() {
 function stop() {
     let cur_val = parseInt(document.getElementById('counter').innerHTML)
     clearInterval(x);
-    document.getElementById("counter").innerHTML = cur_val
+    document.getElementById("counter").innerHTML = "Timer Stopped"
     var btn = document.getElementById('button1');
     btn.disabled = false;
 }
